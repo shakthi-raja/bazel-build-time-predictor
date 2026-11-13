@@ -226,6 +226,18 @@ The tests check the 500-row dataset, the 300 / 100 / 100 split, the absence of p
 
 ---
 
+## Validation snapshot
+
+Final checks completed:
+
+- 6 smoke tests pass.
+- The notebook is executed and its outputs match `reports/metrics.json`.
+- The write-up is 2 A4 pages, and the deck is 11 slides.
+- `python src/predict.py --sample 1` and `--sample 2` work.
+- The reported metrics match the README, write-up, deck and notebook.
+
+---
+
 ## Limitations
 
 - The dataset has no machine load, cache state, or exact changed-file list, so some builds remain hard to predict. The test RMSE of 3,159 ms is useful for triage but not precise enough for billing.
